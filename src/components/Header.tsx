@@ -21,21 +21,26 @@ const Header = () => {
             />
           </div>
 
-          {/* Desktop Menu */}
-          <nav className="hidden md:flex items-center space-x-8">
-            <a 
-              href="#" 
-              className="text-foreground hover:text-primary transition-colors duration-200 font-medium"
-            >
-              Home
-            </a>
-            <a 
-              href="#" 
-              className="text-foreground hover:text-primary transition-colors duration-200 font-medium"
-            >
-              Sobre Nós
-            </a>
+          {/* Desktop Menu - Centralizado */}
+          <nav className="hidden md:flex items-center justify-center flex-1">
+            <div className="flex items-center space-x-8">
+              <a 
+                href="#" 
+                className="text-foreground hover:text-primary transition-colors duration-200 font-medium"
+              >
+                Home
+              </a>
+              <a 
+                href="#" 
+                className="text-foreground hover:text-primary transition-colors duration-200 font-medium"
+              >
+                Sobre Nós
+              </a>
+            </div>
           </nav>
+
+          {/* Espaçador para manter o logo alinhado à esquerda */}
+          <div className="hidden md:block w-[120px]"></div>
 
           {/* Mobile Menu Button */}
           <Button
